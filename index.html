@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html 실습</title>
+<!-- 내부 스타일 시트 : head 섹션 안에서 각 요소들의 스타일 정의 a태그에 대해 정의 -->
+    <style>a{color: white;}</style>
+<!-- 외부 스타일 시트 : 별도의 css 파일을 만들고 이를 html 과 연결해야 함 -->
+<link rel="stylesheet" href="./style/styles.css"/>
+
   </head>
   <body>
-    <div>
-      <p>p태그입니다</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        explicabo doloribus placeat cupiditate qui accusamus maiores totam,
-        animi natus soluta laudantium, quidem rerum blanditiis laboriosam
-        eveniet! Cumque, officiis repellendus? Similique.
-      </p>
-      <a href="https://www.naver.com/" target="_blank">네이버 바로가기 </a>
-    </div>
-    <div>
-      <a href="">구글 바로가기</a>
+    <div style="background-color: rgb(172, 172, 214); color: white;">
+      <div>
+        <p>p태그입니다</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          explicabo doloribus placeat cupiditate qui accusamus maiores totam,
+          animi natus soluta laudantium, quidem rerum blanditiis laboriosam
+          eveniet! Cumque, officiis repellendus? Similique.
+        </p>
+        <a href="https://www.naver.com/" target="_blank">네이버 바로가기 </a>
+      </div>
+      <div>
+        <a href="">구글 바로가기</a>
+      </div>
     </div>
     <div>
       <!-- 주석 comment -->
@@ -64,7 +71,7 @@
     </dl>
     <form>
       <h3>로그인</h3><div>
-        <span>ID</span>
+        <span style="color: blue;">ID</span>
         <input type="text"/>
       </div><br/>
     <div>
@@ -83,9 +90,9 @@
       <input type="radio" name="gender" value="animal" id="animal"/>
       <label for="animal">동물</label>
     </div>
-        <div>
-      <p>체크박스 버튼</p>
-      
+    <div>
+      <p style="border: 2px solid pink;">체크박스 버튼</p>
+    
       <input type="checkbox" name="food" value="doughnut" id="doughnut"/>
       <label for="doughnut">도넛</label>
 
@@ -115,6 +122,18 @@
       <option value="yogurt">요아정 요거트</option>
      </select>
 
+
+
     </form>
+
+
+<div>
+ <p class="parent">부모입니다</p>
+ <p class="children">자식입니다</p>
+ <p class="childend_childen">자손입니다</p>
+</div>
+
+<button type="submit" class="submit-button">서류 제출</button>
+        
   </body>
 </html>

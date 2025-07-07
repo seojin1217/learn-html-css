@@ -1,0 +1,18 @@
+@import url(reset.css);
+
+form {
+  border: 3px dotted gray;
+}
+
+
+#box1 {
+  background-color: rgb(185, 122, 44);
+}
+
+.parent{background-color: rgba(255, 0, 0, 0.3;}
+
+.parent ~ div{border: 3px solid aqua;}
+
+.parent + div{border: 3px solid aqua;}
+
+.submit-button:hover {background-color: blueviolet;}
